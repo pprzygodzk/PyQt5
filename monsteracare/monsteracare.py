@@ -93,27 +93,27 @@ class MCare(QWidget):
         if self.place.currentText() == "near a window":
             self.messages.append("You have placed your monstera in a good area!")
         else:
-            self.messages.append("You should place your plant near a window, remembering that monsteras don't like direct sunlight (it can harm them)")
+            self.messages.append("You should place your plant near a window, remembering that monsteras don't like direct sunlight (it can harm them).")
         
         if self.watering.value() == 1 or self.watering.value() == 2:
             self.messages.append("You water your monstera very well!")
         else:
-            self.messages.append("Watering your plant too often can lead to decay of roots whereas watering it too rarely can lead to death of it.\nTry to water your plant more/less often!")
+            self.messages.append("Watering your plant too often can lead to rotting of roots whereas watering it too rarely can lead to its death.\nTry to water your plant more/less often!")
         
         if self.fertilizing.currentText() == "once a month in summer":
             self.messages.append("It feels like your plant's soil is fertilized often enough!")
         else:
-            self.messages.append("Fertilizing your plant too often or not at all can cause damages in your plant like chemical burn or malnutrition!\nThe best way is to fertilize your monstera once a month only in summer and when winter comes, leave it alone.")
+            self.messages.append("Fertilizing your plant too often or not doing it at all can cause damages in your plant like chemical burn or malnutrition!\nThe best way is to fertilize your monstera once a month only in summer and when winter comes, leave it alone.")
         
         if self.humidity3.isChecked() == True:
             self.messages.append("High air humidity is required for your monstera to grow properly! Great!")
         else:
-            self.messages.append("Try to sprinkle your monstera's leaves with water! It'll thank you later!")
+            self.messages.append("If your air is dry to sprinkle your monstera's leaves with water! It'll thank you later!")
         
         if self.drainage.isChecked() == True:
             self.messages.append("Superb! Drainage is important to keep the monstera's roots away from the direct contact with water!")
         else:
-            self.messages.append("Next time you transplant your plant, remember to buy some rocks to isolate roots from the water and prevent them\nfrom decaying!")
+            self.messages.append("Next time you transplant your plant, remember to buy some rocks to isolate roots from the direct contact with water\nand prevent them from decaying!")
         
         layout = QGridLayout()
         for i, m in enumerate(self.messages):
