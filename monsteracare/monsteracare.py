@@ -103,7 +103,7 @@ class MCare(QWidget):
         if self.fertilizing.currentText() == "once a month in summer":
             self.messages.append("It feels like your plant's soil is fertilized often enough!")
         else:
-            self.messages.append("Fertilizing your plant too often or not at all can cause damages in your plant like chemical burn or malnutrition!\nThe best way is to fertilize your monstera once a month only in summer and when a winter comes, leave it alone.")
+            self.messages.append("Fertilizing your plant too often or not at all can cause damages in your plant like chemical burn or malnutrition!\nThe best way is to fertilize your monstera once a month only in summer and when winter comes, leave it alone.")
         
         if self.humidity3.isChecked() == True:
             self.messages.append("High air humidity is required for your monstera to grow properly! Great!")
