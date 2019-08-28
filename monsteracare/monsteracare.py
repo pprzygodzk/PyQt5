@@ -108,7 +108,7 @@ class MCare(QWidget):
         if self.humidity3.isChecked() == True:
             self.messages.append("High air humidity is required for your monstera to grow properly! Great!")
         else:
-            self.messages.append("If your air is dry to sprinkle your monstera's leaves with water! It'll thank you later!")
+            self.messages.append("If your air is dry, try to sprinkle your monstera's leaves with water! It'll thank you later!")
         
         if self.drainage.isChecked() == True:
             self.messages.append("Superb! Drainage is important to keep the monstera's roots away from the direct contact with water!")
