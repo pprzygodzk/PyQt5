@@ -7,8 +7,9 @@ from PyQt5.QtCore import Qt
 class Score(QWidget):
     def __init__(self, parent = None):
         super().__init__(parent)
-        self.setWindowTitle("MonsteraCare 1.0")
         self.setGeometry(20, 20, 400, 200)
+        self.setWindowIcon(QIcon('monstera.png'))
+        self.setWindowTitle("MonsteraCare 1.0")
 
 
 class MCare(QWidget):
